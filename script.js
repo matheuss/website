@@ -9,7 +9,7 @@ $(function () {
 
     strings = strings.map(function (e) {
         var result = e + " ^250<span class='tiny'>";
-        result += '(' +  langs.shift() + ')';
+        result += '(' + langs.shift() + ')';
         result += "</span>";
         return result;
     });
