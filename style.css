@@ -10,8 +10,8 @@ body {
     height: 100vh;
 }
 
-#soon, .typed-cursor, .tiny{
-    font-size: 4.75em;
+#soon, .typed-cursor {
+    font-size: 5em;
     color: slategray;
 }
 
@@ -23,7 +23,8 @@ body {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    animation: blink 1s infinite;
+    position: relative;
 }
 @keyframes blink{
     0% { opacity:1; }
@@ -39,4 +40,12 @@ body {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+.typed-cursor.normal {
+    top: 1.6em;
+}
+
+.typed-cursor.asian {
+    top: 1.45em;
 }

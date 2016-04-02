@@ -22,15 +22,32 @@ $(function () {
         strings[j] = temp;
     }
 
-    strings.unshift('soon^500' + "<span class='tiny'>(en)</span>");
+    strings.unshift('soon ^500' + "<span class='tiny'>(en)</span>");
 
     setTimeout(function () {
         $(soon).typed({
             strings: strings,
-            typeSpeed: 75,
-            backSpeed: 25,
+            typeSpeed: 100,
+            backSpeed: 50,
             backDelay: 1000,
             loop: true
         });
     }, 1000);
+
+    $(soon).bind('DOMSubtreeModified', function () {
+        var text = $(this).text();
+        var cursor = $('.typed-cursor');
+
+        if (text.slice(-1) == ' ') {
+            if (text != 'em ' && text != 'již ') {
+                $(cursor).toggleClass('tiny');
+
+                if (text == '不久 ' || text == 'すぐに ') {
+                    $(cursor).toggleClass('asian');
+                } else {
+                    $(cursor).toggleClass('normal');
+                }
+            }
+        }
+    })
 });
