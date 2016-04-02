@@ -8,11 +8,10 @@ $(function () {
     var langs = ['pt', 'nl', 'es', 'ru', 'zh', 'ja', 'cs', 'la', 'de', 'it'];
 
     strings = strings.map(function (e) {
-        var result = e + "<span class='tiny'>";
+        var result = e + " ^500<span class='tiny'>";
         result += '(' +  langs.shift() + ')';
         result += "</span>";
-        var index = result.indexOf('(');
-        return result.slice(0, index) + ' ^500' + result.slice(index);
+        return result;
     });
 
     for (var i = strings.length - 1; i > 0; i--) {
