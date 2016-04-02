@@ -4,8 +4,9 @@
 
 $(function () {
     var soon = $('#soon');
-    var strings = ['em breve', 'spoedig', 'pronto', 'скоро', '不久', 'すぐに', 'již brzy', 'primum', 'bald', 'presto'];
-    var langs = ['pt', 'nl', 'es', 'ru', 'zh', 'ja', 'cs', 'la', 'de', 'it'];
+    var strings = ['em breve', 'spoedig', 'pronto', 'скоро', '不久', 'すぐに', 'již brzy', 'primum', 'bald', 'presto',
+        'bientôt', 'hamar', 'σύντομα', 'baldaŭ'];
+    var langs = ['pt', 'nl', 'es', 'ru', 'zh', 'ja', 'cs', 'la', 'de', 'it', 'fr', 'hu', 'el', 'eo'];
 
     strings = strings.map(function (e) {
         var result = e + " ^250<span class='tiny'>";
