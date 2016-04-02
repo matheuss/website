@@ -24,15 +24,13 @@ $(function () {
 
     strings.unshift('soon ^250' + "<span class='tiny'>(en)</span>");
 
-    setTimeout(function () {
-        $(soon).typed({
-            strings: strings,
-            typeSpeed: 100,
-            backSpeed: 50,
-            backDelay: 1000,
-            loop: true
-        });
-    }, 1000);
+    $(soon).typed({
+        strings: strings,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true
+    });
 
     $(soon).bind('DOMSubtreeModified', function () {
         var text = $(this).text();
