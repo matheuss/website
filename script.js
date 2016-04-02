@@ -8,7 +8,7 @@ $(function () {
     var langs = ['pt', 'nl', 'es', 'ru', 'zh', 'ja', 'cs', 'la', 'de', 'it'];
 
     strings = strings.map(function (e) {
-        var result = e + " ^500<span class='tiny'>";
+        var result = e + " ^250<span class='tiny'>";
         result += '(' +  langs.shift() + ')';
         result += "</span>";
         return result;
@@ -21,7 +21,7 @@ $(function () {
         strings[j] = temp;
     }
 
-    strings.unshift('soon ^500' + "<span class='tiny'>(en)</span>");
+    strings.unshift('soon ^250' + "<span class='tiny'>(en)</span>");
 
     setTimeout(function () {
         $(soon).typed({
