@@ -10,9 +10,13 @@ body {
     height: 100vh;
 }
 
-#soon, .typed-cursor {
+#soon, .typed-cursor, .tiny{
     font-size: 4.75em;
     color: slategray;
+}
+
+.tiny {
+    font-size: 1rem;
 }
 
 .typed-cursor{
