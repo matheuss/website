@@ -49,3 +49,20 @@ body {
 .typed-cursor.asian {
     top: 1.45em;
 }
+
+#emoji {
+    position: relative;
+    top: 40px;
+    background-image: url('emojis.png');
+    display: inline-block;
+    width: 200px;
+    height: 230px;
+    background-size: 6000px;
+    background-repeat: no-repeat;
+    background-position: -2000px, 0;
+}
+
+#four_oh_four {
+    font-size: 13em;
+    color: slategray;
+}
