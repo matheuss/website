@@ -1,13 +1,18 @@
-body {
+html, body {
     margin: 0 !important;
+    width: 100%;
+    height: 100%;
 }
 
-#flex {
+body {
+    display: table;
+}
+
+.container {
     font-family: 'Dosis', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #soon, .typed-cursor {
@@ -40,14 +45,6 @@ body {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
-}
-
-.typed-cursor.normal {
-    top: 1.6em;
-}
-
-.typed-cursor.asian {
-    top: 1.45em;
 }
 
 #emoji {

@@ -39,12 +39,6 @@ $(function () {
         if (text.slice(-1) == ' ') {
             if (text != 'em ' && text != 'již ') {
                 $(cursor).toggleClass('tiny');
-
-                if (text == '不久 ' || text == 'すぐに ') {
-                    $(cursor).toggleClass('asian');
-                } else {
-                    $(cursor).toggleClass('normal');
-                }
             }
         }
     })
