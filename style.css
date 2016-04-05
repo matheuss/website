@@ -62,3 +62,7 @@ body {
 #four_oh_four {
     font-size: 13em;
 }
+
+a {
+    color: slategray;
+}
