@@ -1,0 +1,25 @@
+{
+  "name": "matheus.top",
+  "private": true,
+  "version": "1.0.0",
+  "description": "https://matheus.top",
+  "scripts": {
+    "test": "xo",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheuss/matheuss.github.io.git"
+  },
+  "author": "Matheus Fernandes <npm@matheus.top> (https://matheus.top/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheuss/matheuss.github.io/issues"
+  },
+  "homepage": "https://github.com/matheuss/matheuss.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.0.3",
+    "xo": "^0.16.0"
+  }
+}
