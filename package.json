@@ -6,7 +6,9 @@
   "scripts": {
     "test": "xo",
     "prebuild": "npm run test",
-    "build": "gulp"
+    "build": "gulp",
+    "prestart": "npm run test",
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
