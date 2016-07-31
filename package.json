@@ -5,6 +5,7 @@
   "description": "https://matheus.top",
   "scripts": {
     "test": "xo",
+    "prebuild": "npm run test",
     "build": "gulp"
   },
   "repository": {
