@@ -8,6 +8,7 @@ const uglify = require('gulp-uglify');
 const livereload = require('gulp-livereload');
 
 gulp.task('build', () => {
+	gulp.src('assets/*').pipe(gulp.dest('./')).pipe(livereload());
 	gulp.src('src/*.pug').pipe(pug()).pipe(gulp.dest('./')).pipe(livereload());
 	gulp.src('src/*.css').pipe(gulp.dest('dist')).pipe(livereload());
 	gulp.src('src/*.js')
