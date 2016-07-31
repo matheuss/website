@@ -4,20 +4,36 @@ html, body {
     height: 100%;
 }
 
-body {
-    display: table;
+body, .container {
     font-family: 'Dosis', sans-serif;
     color: slategray;
 }
 
-.container {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+.flex-vertical {
+	margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
 }
 
-#soon {
-    font-size: 5em;
+@media only screen and (max-width: 991px) {
+	#name {
+			font-size: 11vw;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#name {
+			font-size: 5em;
+	}
+}
+
+a > i {
+	padding: 0.5em;
 }
 
 #emoji {
