@@ -6,7 +6,7 @@
   "scripts": {
     "test": "xo",
     "prebuild": "npm run test",
-    "build": "gulp",
+    "build": "gulp build",
     "prestart": "npm run test",
     "start": "gulp watch"
   },
