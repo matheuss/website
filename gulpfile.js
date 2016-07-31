@@ -18,7 +18,7 @@ gulp.task('build', () => {
 		.pipe(livereload());
 });
 
-gulp.task('watch', () => {
+gulp.task('watch', ['build'], () => {
 	http.createServer(st({path: process.cwd(), index: 'index.html', cache: false})).listen(3000);
 	livereload.listen();
 	gulp.watch(['src/*'], ['build']);
