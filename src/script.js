@@ -1,7 +1,3 @@
-/**
- * Created by matheus on 4/2/16.
- */
-
 $(() => {
 	const soon = $('#soon');
 	let strings = ['em breve', 'spoedig', 'pronto', 'скоро', '不久', 'すぐに', 'již brzy', 'primum', 'bald', 'presto',
