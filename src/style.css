@@ -20,9 +20,19 @@ body, .container {
 	height: 100%;
 }
 
+.icons {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
 @media only screen and (max-width: 991px) {
 	#name {
 			font-size: 11vw;
+	}
+
+	.icons {
+		width: 79vw;
 	}
 }
 
@@ -30,10 +40,10 @@ body, .container {
 	#name {
 			font-size: 5em;
 	}
-}
-
-a > i {
-	padding: 0.5em;
+	.icons {
+		width: 90%;
+		max-width: 36em;
+	}
 }
 
 #emoji {
