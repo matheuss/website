@@ -9,7 +9,6 @@ const uglify = require('gulp-uglify');
 const livereload = require('gulp-livereload');
 
 gulp.task('build', () => {
-	gulp.src('assets/*').pipe(gulp.dest('./')).pipe(livereload());
 	gulp.src('src/*.pug').pipe(pug()).pipe(gulp.dest('./')).pipe(livereload());
 	gulp.src('src/*.styl')
 		.pipe(stylus({compress: true}))
