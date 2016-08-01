@@ -1,35 +1,20 @@
-doctype html
-html(lang='en')
-  head
-    title Matheus Fernandes
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(href='https://fonts.googleapis.com/css?family=Dosis', rel='stylesheet', type='text/css')
-    link(href='dist/style.css', rel='stylesheet', type='text/css')
-    script(src='https://use.fontawesome.com/5a8b9db23f.js')
-  body
-    .flex-vertical
-      span#name Matheus Fernandes
-      .icons
-        a(href='https://github.com/matheuss', target='_blank')
-          i.fa.fa-2x.fa-github
-        a(href='https://twitter.com/matheusfrndes', target='_blank')
-          i.fa.fa-2x.fa-twitter
-        a(href='mailto:hi@matheus.top?subject=Hi')
-          i.fa.fa-2x.fa-envelope
-        a(href='https://500px.com/mmatheus', target='_blank')
-          i.fa.fa-2x.fa-500px
-        a(href='https://www.linkedin.com/in/matheusfrndes', target='_blank')
-          i.fa.fa-2x.fa-linkedin
-        a(href='https://medium.com/@matheuss', target='_blank')
-          i.fa.fa-2x.fa-medium
+extends ./layout.pug
+block body
+  .flex-vertical
+    span#name Matheus Fernandes
+    .icons
+      a(href='https://github.com/matheuss', target='_blank')
+        i.fa.fa-2x.fa-github
+      a(href='https://twitter.com/matheusfrndes', target='_blank')
+        i.fa.fa-2x.fa-twitter
+      a(href='mailto:hi@matheus.top?subject=Hi')
+        i.fa.fa-2x.fa-envelope
+      a(href='https://500px.com/mmatheus', target='_blank')
+        i.fa.fa-2x.fa-500px
+      a(href='https://www.linkedin.com/in/matheusfrndes', target='_blank')
+        i.fa.fa-2x.fa-linkedin
+      a(href='https://medium.com/@matheuss', target='_blank')
+        i.fa.fa-2x.fa-medium
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
   script(src='dist/script.js')
-  script.
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-75832795-1', 'auto');
-    ga('send', 'pageview');
+  

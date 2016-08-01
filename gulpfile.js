@@ -1,6 +1,7 @@
 const http = require('http');
 
 const babel = require('gulp-babel');
+const del = require('del');
 const gulp = require('gulp');
 const pug = require('gulp-pug');
 const st = require('st');
@@ -9,7 +10,11 @@ const uglify = require('gulp-uglify');
 const livereload = require('gulp-livereload');
 
 gulp.task('build', () => {
-	gulp.src('src/*.pug').pipe(pug()).pipe(gulp.dest('./')).pipe(livereload());
+	gulp.src('src/*.pug')
+		.pipe(pug())
+		.pipe(gulp.dest('./'))
+		.pipe(livereload())
+		.on('end', () => del('./layout.html'));
 	gulp.src('src/*.styl')
 		.pipe(stylus({compress: true}))
 		.pipe(gulp.dest('dist'))
