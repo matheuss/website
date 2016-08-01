@@ -46,6 +46,34 @@ body, .container {
 	}
 }
 
+a > i {
+	transition: color .3s;
+}
+
+a:nth-child(1):hover {
+	color: #333333;
+}
+
+a:nth-child(2):hover {
+	color: #1da1f2;
+}
+
+a:nth-child(3):hover {
+	color: #ff2fc4;
+}
+
+a:nth-child(4):hover {
+	color: #0099e5;
+}
+
+a:nth-child(5):hover {
+	color: #0077b5;
+}
+
+a:nth-child(6):hover {
+	color: #00ab6c;
+}
+
 #emoji {
     position: relative;
     top: 40px;
