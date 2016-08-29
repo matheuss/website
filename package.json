@@ -33,6 +33,6 @@
     "xo": "^0.16.0"
   },
   "xo": {
-    "envs": ["jquery"]
+    "envs": ["browser"]
   }
 }

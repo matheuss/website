@@ -1,15 +1,15 @@
-$(() => {
+document.addEventListener('DOMContentLoaded', () => {
+	const span = document.querySelector('span');
 	let timeout;
-	$('#name').on('click', function () {
-		if ($(this).text().startsWith('M')) {
-			$(this).text('🦁🦄🐶🐱🐮🐷');
-			const self = this;
+	span.onclick = function () {
+		if (span.innerHTML.startsWith('M')) {
+			span.innerHTML = '🦁🦄🐶🐱🐮🐷';
 			timeout = setTimeout(function () {
-				$(self).text('Matheus Fernandes');
+				span.innerHTML = 'Matheus Fernandes';
 			}, 5000);
 		} else {
 			clearTimeout(timeout);
-			$(this).text('Matheus Fernandes');
+			span.innerHTML = 'Matheus Fernandes';
 		}
-	});
+	};
 });
