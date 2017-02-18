@@ -1,1 +1,0 @@
-"use strict";document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector("span"),n=void 0;e.onclick=function(){e.innerHTML.startsWith("M")?(e.innerHTML="🦁🦄🐶🐱🐮🐷",n=setTimeout(function(){e.innerHTML="Matheus Fernandes"},5e3)):(clearTimeout(n),e.innerHTML="Matheus Fernandes")}});
