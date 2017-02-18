@@ -9,7 +9,6 @@ module.exports = {
   output: {
     path: joinPath(__dirname, 'dist'),
     filename: 'main.js',
-    // publicPath: 'assets/'
   },
   module: {
     rules: [
