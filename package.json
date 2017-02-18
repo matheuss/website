@@ -11,12 +11,13 @@
   "repository": "matheuss/website",
   "author": "Matheus Fernandes <npm@matheus.top> (https://matheus.top/)",
   "license": "MIT",
+  "dependencies": {
+    "serve": "^3.3.1"
+  },
   "devDependencies": {
     "copy-webpack-plugin": "4.0.1",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "beta",
-    "file-loader": "^0.10.0",
-    "html-loader": "^0.4.4",
     "webpack": "2.2.1",
     "webpack-dev-server": "^2.3.0"
   }
