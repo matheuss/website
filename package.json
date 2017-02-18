@@ -17,11 +17,19 @@
     "serve": "^3.3.1"
   },
   "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.1.8",
     "copy-webpack-plugin": "4.0.1",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "beta",
     "webpack": "2.2.1",
     "webpack-dev-server": "^2.3.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   },
   "now": {
     "alias": [
