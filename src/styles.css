@@ -29,8 +29,8 @@ h1 {
   display: flex;
 }
 
-li {
-  margin-right: 1em;
+li + li {
+  margin-left: 1em;
 }
 
 .links img {
