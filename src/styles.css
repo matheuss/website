@@ -1,5 +1,6 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow: hidden;
 }
 
 .content {
@@ -17,6 +18,15 @@ h1 {
   font-weight: 100;
   font-size: 5em;
   text-align: center;
+  animation: 3s infinite pulse;
+  animation-delay: 2s;
+  user-select: none;
+  cursor: pointer;
+  transition: font-weight .3s ease-in-out;
+}
+
+h1:active {
+  font-weight: 400;
 }
 
 .links {
@@ -35,4 +45,27 @@ li + li {
 
 .links img {
   width: 3em;
+}
+
+.rain {
+  position: absolute;
+  top: -160px;
+  transition: transform 3s cubic-bezier(0.310, 0.440, 0.445, 1.650);
+}
+
+@keyframes pulse {
+  0%, 20% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80%, 100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
