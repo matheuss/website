@@ -7,7 +7,8 @@
     "start": "serve dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --port 3000",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "now && now alias"
   },
   "repository": "matheuss/website",
   "author": "Matheus Fernandes <npm@matheus.top> (https://matheus.top/)",
