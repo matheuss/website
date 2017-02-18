@@ -16,4 +16,23 @@ body {
 h1 {
   font-weight: 100;
   font-size: 5em;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  margin-top: 3em;
+}
+
+.links ul {
+  margin: auto;
+  display: flex;
+}
+
+li {
+  margin-right: 1em;
+}
+
+.links img {
+  width: 3em;
 }
