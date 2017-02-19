@@ -32,9 +32,11 @@ function insertRandomEmoji(emojis) {
   img.style.left = `${Math.random() * (SCREEN_WIDTH - EMOJI_MAX_WIDTH)}px`
 
   body.append(img)
-  setTimeout(() => {
-    img.style.transform = 'translateY(130vh)'
-  }, Math.round(Math.random() * 1000))
+  img.addEventListener('load', () => {
+    setTimeout(() => {
+      img.style.transform = 'translateY(130vh)'
+    }, Math.round(Math.random() * 1400))
+  })
 
   img.addEventListener('transitionend', () => img.remove())
 }
@@ -44,7 +46,7 @@ const matheus = document.querySelector('h1')
 
 matheus.onclick = () => {
   const arr = [...emojis]
-  for (const i = 0; i < 10; i++) {
+  for (const i = 0; i < 14; i++) {
     insertRandomEmoji(arr)
   }
 }
