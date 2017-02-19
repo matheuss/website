@@ -34,6 +34,10 @@ module.exports = {
       {
         from: './src/assets',
         to: 'assets'
+      },
+      {
+        from: './src/*.txt',
+        flatten: true
       }
     ]),
     new ExtractTextPlugin('styles.css')
