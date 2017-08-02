@@ -1,7 +1,7 @@
 # en
 Composing the cloud
 
-How to compose an application so that each backend component works, scales and operates independently, allowing for inexpensive, reliable and infinite scalability.
+How to compose an application so that each component works, scales and operates independently, allowing for inexpensive, reliable and infinite scalability.
 
 # pt
 Composing the Cloud
