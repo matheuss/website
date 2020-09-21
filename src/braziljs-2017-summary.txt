@@ -1,9 +1,0 @@
-# en
-Composing the cloud
-
-How to compose an application so that each component works, scales and operates independently, allowing for inexpensive, reliable and infinite scalability.
-
-# pt
-Composing the Cloud
-
-Como compor um aplicativo de forma que cada componente funcione, escale e opere de forma independente, permitindo uma escalabilidade barata, confiável e infinita.

@@ -1,0 +1,42 @@
+@import './font.css';
+
+html,body {
+  /* Many apply instead of one so vscode doesnt complain :expressionless: */ 
+  @apply text-white;
+  font-family: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+#name, #title {
+  letter-spacing: -.06em;
+}
+
+#name {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+br {
+  user-select: none;
+}
+
+#title {
+  @apply text-2xl;
+  font-weight: 600;
+  text-align: right;
+}
+
+#social {
+  text-align: center;
+}
+
+.one-e, .no-tacos-allowed {
+  background-color: #1e1e1e;
+}
+
+.no-tacos-allowed {
+  background-image: url("../public/no-tacos-allowed.png");
+  background-size: 2rem;
+}

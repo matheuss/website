@@ -1,42 +1,22 @@
 {
-  "name": "matheus.top",
+  "name": "website",
   "version": "0.1.0",
   "private": true,
-  "description": "🦁",
   "scripts": {
-    "start": "serve dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --port 3000",
-    "build": "webpack",
-    "deploy": "now && now alias"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": "matheuss/website",
-  "author": "Matheus Fernandes <npm@matheus.top> (https://matheus.top/)",
-  "license": "MIT",
   "dependencies": {
-    "serve": "^3.3.1"
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.3.2",
-    "babel-preset-env": "^1.1.8",
-    "copy-webpack-plugin": "4.0.1",
-    "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "beta",
-    "webpack": "2.2.1",
-    "webpack-dev-server": "^2.3.0"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
-  "now": {
-    "alias": [
-      "matheus.top",
-      "www.matheus.top",
-      "matheus.wtf",
-      "www.matheus.wtf"
-    ]
+    "@types/node": "14.11.1",
+    "@types/react": "16.9.49",
+    "postcss-preset-env": "6.7.0",
+    "tailwindcss": "1.8.10",
+    "typescript": "4.0.3"
   }
 }
