@@ -11,8 +11,8 @@ const Index = () => {
 
     return (
         <div className={'flex h-screen ' + backgroundClass} >
-            <div className='m-auto'>
-                <div>
+            <div className='m-auto text-center'>
+                <div className='inline-block'>
                     <h1 id='name' onClick={handleClick}>Matheus</h1>
                     <h2 id='title'>Head of Infra, <Link href="https://vercel.com">Vercel</Link></h2>
                 </div >
