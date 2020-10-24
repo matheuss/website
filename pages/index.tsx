@@ -16,6 +16,7 @@ const Index = () => {
                     <h1 id='name' onClick={handleClick}>Matheus</h1>
                     <h2 id='title'>Head of Infra, <Link href="https://vercel.com">Vercel</Link></h2>
                 </div >
+                <div style={{ height: '1.5rem' }} />
                 <p id="social">
                     <Link href="https://twitter.com/matheusfrndes">Twitter</Link> |{' '}
                     <Link href="https://www.linkedin.com/in/matheusfrndes">LinkedIn</Link> |{' '}
