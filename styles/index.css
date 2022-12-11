@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body {
+  /* Many apply instead of one so vscode doesnt complain :expressionless: */
+  @apply text-white;
+  background-color: #000000;
+}
+
+#name, #title {
+  letter-spacing: -.06em;
+}
+
+#name {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
+  user-select: none;
+}
+
+br {
+  user-select: none;
+}
+
+#title {
+  @apply text-2xl;
+  font-weight: 600;
+  text-align: right;
+}
+
+#social {
+  text-align: center;
+}
+
+/* below is mostly copy-pasta from https://github.com/kiding/wanna-see-a-whiter-white */
+
+/* WebKit */
+@supports (-webkit-backdrop-filter: blur(0)) {
+  h1, h2, p {
+    filter: brightness(10);
+    -webkit-backdrop-filter: brightness(1);
+  }
+}
+
+/* Blink */
+@supports (backdrop-filter: blur(0)) {
+  h1, h2, p {
+    filter: brightness(10);
+    backdrop-filter: brightness(1);
+  }
+}
+
+video {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+
+video:nth-of-type(2) {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+
+video:nth-of-type(3) {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
