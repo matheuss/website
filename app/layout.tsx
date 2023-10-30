@@ -1,11 +1,6 @@
 import '../styles/index.css'
 
-import { Inter } from '@next/font/google';
-
-const inter = Inter({
-    subsets: ["latin"],
-    variable: '--font-inter',
-});
+import { GeistSans } from "geist/font";
 
 export default function RootLayout({
     children
@@ -13,7 +8,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en" className={inter.className}>
+        <html lang="en" className={GeistSans.className}>
             <body>{children}</body>
         </html>
     )

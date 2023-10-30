@@ -14,7 +14,7 @@ html,body {
 
 #name {
   font-size: 5rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1;
   user-select: none;
 }
@@ -25,7 +25,7 @@ br {
 
 #title {
   @apply text-2xl;
-  font-weight: 600;
+  font-weight: 400;
   text-align: right;
 }
 
