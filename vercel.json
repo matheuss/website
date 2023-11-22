@@ -1,3 +1,4 @@
 {
-  "regions": ["iad1"]
+  "regions": ["iad1"],
+  "functionFailoverRegions": ["kix1"]
 }
