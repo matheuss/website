@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 const Index = () => {
   return (
@@ -14,16 +13,6 @@ const Index = () => {
           </h2>
         </div>
         <div style={{ height: "1.5rem" }} />
-        <div className="relative w-screen h-screen">
-          <Image
-            src="/vercel-prism.jpeg"
-            alt="Background"
-            width={1000}
-            height={1000}
-            className="object-cover"
-            priority
-          />
-        </div>
         <p id="social">
           <Link href="https://twitter.com/matheusfrndes" target="_blank">
             Twitter
