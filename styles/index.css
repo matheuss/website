@@ -41,12 +41,20 @@ br {
     filter: brightness(10);
     -webkit-backdrop-filter: brightness(1);
   }
+  img {
+    filter: brightness(1.5);
+    -webkit-backdrop-filter: brightness(1);
+  }
 }
 
 /* Blink */
 @supports (backdrop-filter: blur(0)) {
   h1, h2, p {
     filter: brightness(10);
+    backdrop-filter: brightness(1);
+  }
+  img {
+    filter: brightness(1.5);
     backdrop-filter: brightness(1);
   }
 }
