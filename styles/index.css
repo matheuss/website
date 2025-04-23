@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --image-brightness: 1.75;
+}
+
 html,body {
   /* Many apply instead of one so vscode doesnt complain :expressionless: */
   @apply text-white;
@@ -41,9 +45,9 @@ br {
     filter: brightness(10);
     -webkit-backdrop-filter: brightness(1);
   }
-  img {
-    filter: brightness(1.5);
-    -webkit-backdrop-filter: brightness(1);
+  .prism-image {
+    filter: brightness(var(--image-brightness));
+    -webkit-backdrop-filter: brightness(10);
   }
 }
 
@@ -51,11 +55,11 @@ br {
 @supports (backdrop-filter: blur(0)) {
   h1, h2, p {
     filter: brightness(10);
-    backdrop-filter: brightness(1);
+    backdrop-filter: brightness(10);
   }
-  img {
-    filter: brightness(1.5);
-    backdrop-filter: brightness(1);
+  .prism-image {
+    filter: brightness(var(--image-brightness));
+    backdrop-filter: brightness(10);
   }
 }
 
